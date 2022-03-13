@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about {
+    border-radius: 10px;
+    box-shadow: 5px 5px 24px 0px rgba(0,0,0,0.13);
+    font-weight: 300;
+    margin: 0 auto 3rem ;
+    padding: 2rem;
+    transform: translateY(10%);
+    width: 70%;
+}
+
+.about__title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about__content {
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+/* Dogs */
+.dogs {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.dogs__title {
+    border-bottom: 1px #202024 solid;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.dog__img {
+    border: 2px #fafafa solid;
+    height: 100%;
+    width: 100%;
+}
+
+.dogs__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 2.5rem;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.dog {
+    border-radius: 5%;
+    cursor: pointer;
+    height: 240px;
+    overflow: hidden;
+    position: relative;;
+    width: 240px;
+}
+
+.dog::before {
+    align-items: center;
+    background-color: rgba(13, 255, 0, 0.41);
+    bottom: 0;
+    color: #f2f2f2;
+    content: '';
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .5s;
+}
+
+.dog:hover::before {
+    opacity: 1;
+}
+
+/* Names */
+.dog:nth-child(1)::before {
+    content: 'Cachulo';
+}
+
+.dog:nth-child(2)::before {
+    content: 'Chum';
+}
+
+.dog:nth-child(3)::before {
+    content: 'Nina';
+}
+
+.dog:nth-child(4)::before {
+    content: 'Mojo';
+}
+
+.dog:nth-child(5)::before {
+    content: 'Ouch';
+}
+
+.dog:nth-child(6)::before {
+    content: 'Luli';
+}
+
+.dog:nth-child(7)::before {
+    content: 'Scooby';
+}
+
+.dog:nth-child(8)::before {
+    content: 'Scrapy';
+}

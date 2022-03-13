@@ -1,0 +1,46 @@
+/* Footer */
+footer {
+    background-color: #202024;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.footer__content {
+    margin: 0 auto;
+    padding: 2rem;
+    width: 90%;
+}
+
+.author {
+    color: #f2f2f2;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.logo {
+    align-items: center;
+    border-radius: 50%;
+    border: 2px white solid;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    margin: 1rem;
+    width: 150px;
+}
+
+.mh-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo__iso {
+    color: white;
+    font-size: 4rem;
+}
+
+hr {
+    color: #f2f2f2;
+    margin-top: 2rem;
+}

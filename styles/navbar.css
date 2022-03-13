@@ -1,0 +1,59 @@
+.nav {
+    background: rgb(0,0,0);
+    background: radial-gradient(90deg, rgba(0,0,0,0.8823062672334558) 0%, rgba(0,0,0,1) 100%); 
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    height: 100vh;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: .5s ease-in-out;
+    width: 15rem;
+    z-index: 3;
+}
+
+.showNav {
+    transform: translateX(0%);
+}
+
+.hamburger-btn {
+    background-color: #f2f2f2;
+    border-radius: 10%;
+    cursor: pointer;
+    height: 43px;
+    left: 5%;
+    position: fixed;
+    top: 5%;
+    text-align: center;
+    width: 40px;
+    z-index: 2;
+}
+
+.hamburger {
+    font-size: 2rem;
+}
+
+#nav__bar {
+    align-items: center;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    margin: 0;
+    z-index: 1;
+}
+
+.nav__item {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 3rem 0;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.nav__item:hover {
+    color: gray;
+}
